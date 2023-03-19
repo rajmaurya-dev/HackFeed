@@ -46,15 +46,17 @@ function getData(data) {
   var contactForm = data.val();
   var keys = Object.keys(contactForm);
   console.log(keys);
+  var formData = "";
   for (let i = 0; i < keys.length; i++) {
     let k = keys[i];
     let projectName = contactForm[k].projectName;
     let techStackUsed = contactForm[k].techStackUsed;
     let projectDes = contactForm[k].projectDes;
     let leaderName = contactForm[k].leaderName;
-    console.log(projectName, techStackUsed, projectDes, leaderName);
-    document.querySelector("#root").innerHTML = `<h1>yash raj</h1>
-    <h1>${projectName}</h1>`;
+    formData += `<h1>${
+      (projectName, techStackUsed, leaderName, projectDes)
+    }</h1>`;
+    document.querySelector("#root").innerHTML = formData;
   }
 }
 
