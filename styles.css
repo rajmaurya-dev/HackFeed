@@ -61,6 +61,7 @@ button {
   text-align: center;
   display: none;
 }
+
 #root {
   background-color: rgb(117, 220, 213);
   height: 300px;

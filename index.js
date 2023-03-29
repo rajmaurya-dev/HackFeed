@@ -53,9 +53,11 @@ function getData(data) {
     let techStackUsed = contactForm[k].techStackUsed;
     let projectDes = contactForm[k].projectDes;
     let leaderName = contactForm[k].leaderName;
-    formData += `<h1>${
-      (projectName, techStackUsed, leaderName, projectDes)
-    }</h1>`;
+    formData += `<p>${projectName}</p>
+    <p>${techStackUsed}</p>
+    <p>${projectDes}</p>
+    <a href="https://twitter.com/${leaderName}">${leaderName}</a>
+    `;
     document.querySelector("#root").innerHTML = formData;
   }
 }
