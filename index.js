@@ -42,27 +42,27 @@ function setup() {
 
 setup();
 
-function getData(data) {
-  var contactForm = data.val();
-  var keys = Object.keys(contactForm);
-  console.log(keys);
-  var formData = "";
-  for (let i = 0; i < keys.length; i++) {
-    let k = keys[i];
-    let projectName = contactForm[k].projectName;
-    let techStackUsed = contactForm[k].techStackUsed;
-    let projectDes = contactForm[k].projectDes;
-    let leaderName = contactForm[k].leaderName;
-    formData += `<p>${projectName}</p>
-    <p>${techStackUsed}</p>
-    <p>${projectDes}</p>
-    <a href="https://twitter.com/${leaderName}">${leaderName}</a>
-    `;
-    document.querySelector("#root").innerHTML = formData;
-  }
-}
+// function getData(data) {
+//   var contactForm = data.val();
+//   var keys = Object.keys(contactForm);
+//   console.log(keys);
+//   var formData = "";
+//   for (let i = 0; i < keys.length; i++) {
+//     let k = keys[i];
+//     let projectName = contactForm[k].projectName;
+//     let techStackUsed = contactForm[k].techStackUsed;
+//     let projectDes = contactForm[k].projectDes;
+//     let leaderName = contactForm[k].leaderName;
+//     formData += `<p>${projectName}</p>
+//     <p>${techStackUsed}</p>
+//     <p>${projectDes}</p>
+//     <a href="https://twitter.com/${leaderName}">${leaderName}</a>
+//     `;
+//     document.querySelector("#root").innerHTML = formData;
+//   }
+// }
 
-function errData(err) {
-  console.log("Error!");
-  console.log(err);
-}
+// function errData(err) {
+//   console.log("Error!");
+//   console.log(err);
+// }

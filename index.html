@@ -12,6 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="fillup">
@@ -58,7 +61,8 @@
       </div>
     </div>
     <div id="root"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-    <script src="index.js"></script>
+   <script>
+    getDataFromFirebaseDB();
+   </script>
   </body>
 </html>
